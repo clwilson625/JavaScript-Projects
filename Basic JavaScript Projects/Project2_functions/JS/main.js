@@ -24,3 +24,8 @@ function My_First_Function () {     //Another function and name
     sentence += " and that purpose is to learn!";       //Using the += operator
     document.getElementById("Purpose") .innerHTML = sentence;
 }
+
+function addition_Function()    {
+    var addition = 2+2;
+    document.getElementById("Math") .innerHTML = "2+2=" + addition;
+}
