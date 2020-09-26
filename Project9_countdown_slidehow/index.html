@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+    
+        <script src="./JS/main.js"></script>  <!--links to main.js-->
+        <link rel="stylesheet" type="text/css" href="./CSS/main.css">  <!--links to css file-->
+
+        <p>How many seconds would you like to set your alarm for?</p>
+        <input id="seconds" value=""/>
+        <button onclick = "countdown()">Click here</button>
+        <p id="timer"></p>
+    </head>
+    
+        <body>   
+        <!-- My Slideshow container -->
+        <div class="slideshow-container">
+
+        <!-- 100% width images with picture number and text box -->
+        <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>  <!--Slide 1-->
+        <img src="./Images/image_1.jpg" style="width:100%">
+        <div class="text">Beautiful Snow Covered Mountains</div>
+        </div>
+
+        <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>      <!--Slide 2-->
+        <img src="./Images/image_5.jpg" style="width:100%">
+        <div class="text">So Much Snow!</div>
+        </div>
+
+        <div class="mySlides fade">   <!--Slide 3-->
+        <div class="numbertext">3 / 3</div>
+        <img src="./Images/image_3.jpg" style="width:100%">
+        <div class="text">Looks so peaceful!</div>
+        </div>
+
+        <!-- Buttons for the next and previous slides-->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+  
+  
+               
+
+
+        
+      
+
+    </body>
+
+
+    </html>
+
+
+
