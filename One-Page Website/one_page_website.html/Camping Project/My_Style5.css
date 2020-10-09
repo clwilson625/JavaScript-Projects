@@ -1,0 +1,18 @@
+p {
+	color: blue;
+	background: white;
+	font-style: bold;
+	text-align: center;
+}
+h1 {
+	color: blue;
+	background: gainsboro;
+	font-style: bold;
+	text-align: center;
+}
+h2 {
+	color: blue;
+	background: gainsboro;
+	font-style: bold;
+	text-align: left;
+}

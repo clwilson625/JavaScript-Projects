@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	
+	<head>
+		<title>Camping with Friends</title>
+		<meta charset="utf-8">
+
+		<script src="./JS/one_page_website.js"></script>
+		<link rel="stylesheet" type="text/css" href="./css/one_page_website.css">  <!--Link to CSS-->
+		
+	</head>
+	
+	<body>
+		 <div>
+			<div>
+				<ul>
+					<a href="home" id="link"><li>HOME</li></a>
+					<a href="#gallery"><li>GALLERY</li></a>
+					<a href="#video"><li>VIDEO</li></a>
+					<a href="#contact"><li>CONTACT ME</li></a>
+				</ul>
+			</div>
+		</div>
+		<!--END NAV -->
+		
+		<!--HOME -->
+		<h2>
+		<div id="home">
+			<div>
+				<div>
+					<span>Home</span>
+					<p><font color="midnightblue">Camping can be a very relaxing experience for not only yourself, 
+					but your friends and family. There are many ways to camp. You can pitch a tent, have a bumper 
+					pull or fifth-wheel type camper, or maybe even a driveable recreational vehicle. The possible 
+					destinations are endless! Every state has numerous campgrounds within their boundaries. 
+					Kick back and relax, enjoy some scenic views, check out different waterways, lakes, or rivers. 
+					Smell the fresh clean air and let nature relax you. If you are a someone who likes to fish, 
+					you might just find your new favorite location! Enjoy!</p>
+				</div>
+			</div>
+		</div>
+		</h2>
+		<!--END HOME -->
+		
+		<!-- GALLERY -->
+		<section>
+			
+				<h2 style="text-align: center">Lightbox</h2>
+				<div class="row">
+					<div class="col">
+					<!--Photo One-->
+						<img src="./images/thumbnails/thumbnail_11.jpg" width="275px" height="225px" 
+						onclick="openLightbox(); toSlide(1)"
+						class="hover-shadow preview">
+					</div>
+				<div class="col">
+					<!--Photo Two-->
+						<img src="./images/thumbnails/thumbnail_14.jpg" width="275px" height="225px"
+						onclick="openLightbox(); toSlide(2)"
+						class="hover-shadow preview">
+				</div>
+				<div class="col">
+					<!--Photo Three-->
+						<img src="./images/thumbnails/thumbnail_13.jpg" width="275px" height="225px"
+						onclick="openLightbox(); toSlide(3)"
+						class="hover-shadow preview">
+				</div>
+				<div class="col">
+					<!--Photo Four-->
+						<img src="./images/thumbnails/thumbnail_15.jpg" width="275px" height="225px"
+						onclick="openLightbox(); toSlide(4)"
+						class="hover-shadow preview">
+				   </div>
+				</div>
+
+				<div id="Lightbox" class="modal">
+					<span class="close pointer"
+					onclick="closeLightbox()">&times</span>
+						<div class="modal-content">
+
+						<div class="slide">
+							<img src="./images/thumbnails/thumbnail_11.jpg" class="image-slide" alt="Trees and Picnic Table"/>
+						</div>
+
+						<div class="slide">
+							<img src="./images/thumbnails/thumbnail_14.jpg" class="image-slide" alt="Lakeview"/>
+						</div>
+
+						<div class="slide">
+							<img src="./images/thumbnails/thumbnail_13.jpg" class="image-slide" alt="Campground"/>
+						</div>
+
+						<div class="slide">
+							<img src="./images/thumbnails/thumbnail_15.jpg" class="image-slide" alt="Winter Camping"/>
+						</div>
+
+						<a class="previous" onclick="changeSlide(-1)">&#10094;</a>
+						<a class="next" onclick="changeSlide(1)">&#10095;</a>
+
+						<div class="dots">
+						<div class="col">
+							<img src="./images/thumbnails/thumbnail_11.jpg" class="modal-preview hover-shadow"
+							onclick="toSlide(1)" alt-"Trees and Picnic Table"/>
+						</div>
+
+						<div class="col">
+							<img src="./images/thumbnails/thumbnail_14.jpg" class="modal-preview hover-shadow"
+							onclick="toSlide(2)" alt="Lakeview"/>
+						</div>
+
+						<div class="col">
+							<img src="./images/thumbnails/thumbnail_13.jpg" class="modal-preview hover-shadow"
+							onclick="toSlide(3)" alt="Campground"/>
+						</div>
+
+						<div class="col">
+							<img src="./images/thumbnails/thumbnail_15.jpg" class="modal-preview hover-shadow"
+							onclick="toSlide(4)" alt="Winter Camp"/>
+						</div>
+					   </div>
+					  </div>
+					</div>
+				
+				
+		</section>
+		<!-- END GALLERY -->
+		
+		<!-- VIDEO -->
+		<section>
+			<div id="video">
+				<div>
+					<h2>Video</h2>
+					<div>
+					<h3><span><font color="midnightblue">If you have never sat around a campfire and just listened to the night sounds, here is
+					a sample for you!  Enjoy!</h3></span>
+					<a href="https://www.youtube.com/watch?v=NUKKzdVy0EI.com/">Relax by the campfire</a>
+					</div>
+			    </div>
+		   </div>
+		</section>
+		
+		<!--END VIDEO -->
+		
+		<!-- RSVP-->
+		<section>
+			<div id="contact">
+			<div>
+				<div>
+					<h2>Contact Me</h2>
+					<div>
+						<h3><span>Bringing peace and relaxation, one camping trip at a time.</span>
+							<br />Camping in Kansas
+						</h3>
+						<p>
+							Please provide us with your basic contact information.
+						</p>
+						<div>
+							<form action="" method="post">
+							<font color="bisque">
+								<input class="rsvp" type="text" value="First Name"><br>
+								<input class="rsvp" type="text" value="Last Name"><br>
+								<input class="rsvp" type="text" value="Email Address"><br>
+								<input class="rsvp" type="text" value="Phone Number"><br>
+								<div class="form-spacer">
+									<label class="terms">Terms and Conditions</label>
+								</div>
+								<div>
+									<Input type="submit" value="Submit">
+								</div>
+							</form
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END RSVP -->
+		
+		<!-- FOOTER -->
+		<div>
+			Created by: Carol Wilson &nbsp;\&nbsp; &copy; 2020

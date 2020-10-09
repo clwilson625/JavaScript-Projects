@@ -1,0 +1,49 @@
+html {
+    font-family: sans-serif;
+    font-size: 12px;
+    color: #A0522D;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    border: 8px double #8B4513;
+
+}
+
+body {
+    font-size: 12px;
+    font-family: sans-serif;
+    margin: 0;
+    line-height: 1.5;
+
+}
+
+h3 {
+    color: #0000CD;
+    font-style: italic;
+    font-size: medium;  
+}
+
+p {
+    color: #2F4F4F;
+    
+        width: 50%;
+        padding: 10px 15px;
+        margin: 8px 0;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: small;
+        border: 2px black;
+        border-radius: 12px;
+    
+}
+
+form {
+        box-sizing: border-box;
+        box-shadow: 12px; 
+        width: auto;
+        padding: 10px 10px;
+        font-family: "Raleway";
+        text-align: center;
+        font-size: medium;
+                  
+        
+    }
