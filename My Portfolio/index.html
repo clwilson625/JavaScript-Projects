@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+    <!-- Head -->
+    <head>
+<meta charset="UTF-8">
+<title>Carol Wilson</title>
+<link rel="stylesheet" type="text/css" href="./css/portfolio.css">
+</head>
+    <!-- Body -->
+        <body class="Background">
+    <!-- Navbar -->
+        <div class="Navbar">
+            <a class="active" href="#Home">Home</a>
+            <a href="#Slideshow">Slideshow</a>  <!--New section for slideshow-->
+            <a href="#About">About</a>
+            <a href="#GitHub">GitHub</a>
+            <a onclick="openForm()" ondblclick="closeForm()">Contact</a>  <!--This makes it so that our openForm
+function runs when we click Contact on the nav bar-->
+        </div>
+    <!-- Home -->
+        <div id="Home">
+            <br> <!-- Breaks inserted to add space between navbar
+            and first heading -->
+            <br>
+    <!-- Video -->
+
+        <video autoplay muted loop id="Typing_video"> <!--
+            Makes the video play automatically, on a loop and with no sound -->
+        <source src="./video/blue_binary.mp4" type="video/mp4">
+    Your browser does not support HTML5 video. <!-- Display message if video fails to run -->
+        </video>
+    </div>
+        <!-- Video text -->
+            <div class="Video_Text">
+                <h1 style="color:white;">Carol Wilson's Portfolio</h1>
+        <p>
+            <strong>
+                <center>
+                    <q>What a computer is to me is
+                    the most remarkable tool
+                    that we have ever come up with. 
+                <br>It's the equvalent of a 
+                    bicycle for our minds.  
+                    </q>
+                <br>-Steve
+                Jobs-<br>
+                <br><br>
+                    My name is Carol Wilson.<br>
+                    Welcome to my portfolio website.<br> 
+                    On this page, I will tell you a little about my
+                    background and experience.<br>
+                    <br>Thank you so much for 
+                    stopping by, I hope you enjoy!
+                </center>
+            </strong>
+        </p>
+    </div>
+        <!-- Slideshow section-->
+            <div id="Slideshow">
+                <div id="Slideshow_Background">
+                    <div id="Slideshow_Container">
+
+                <div class="mySlides fade">
+            <div class="Slide_Number">1 / 3</div>
+                    <img class="Slide_Show_Images" src="./img/carol2.jpg" width="225" height="125">
+                    <div class="text">I am available to assist you on your next project!</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="Slide_Number">2 / 3</div>
+                    <img class="Slide_Show_Images" src="img/htmlcss.jpg" weight="225" height="125">
+                    <div class="text">I am a full-stack developer student.<br>
+                        I have been trained in HTML5, CSS3, and JavaScript.</div>
+                        
+                </div>
+                <div class="mySlides fade">
+                    <div class="Slide_Number">3 / 3</div>
+                    <img class="Slide_Show_Images" src="img/javascript.png" width="225" height="125" >
+                    <div class="text">Contact me now!</div>
+                </div>
+                
+                
+                    <div class="text">
+                        <a onclick="openForm()" href="#Contact"
+                        style="color:white;"></a>
+                    </div>
+                </div>
+                <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>    
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>        
+        
+        </div>
+    </div>
+</div>
+
+<!-- About section -->
+<div class="Row" id="About">
+<div class="Column_2"> <!-- Left column -->
+<img src="./img/thumbnail_9.jpg"
+alt="Laptop">
+</div>
+
+<div class="Column_1"> <!-- Right column -->
+<h1>About</h2>
+<p>I am currently a software developer student who loves
+to code! I have a BS in Information Technology with a 
+concentration in Cybersecurity.  A mother and grandmother who enjoyes 
+family time and camping.<br><br>I am a student of <a
+href="https://www.learncodinganywhere.com" target="_blank">The Tech
+Academy</a>’s Software Developer Boot Camp, and am training
+in the following web and programming languages: HTML, CSS,
+JavaScript, SQL, C# and more. <br><br>I 
+would love to work with you on your project. <a
+href="#Contact">Contact</a> me below!</p>
+</div>
+</div>
+<!-- GitHub section -->
+<div class="Row" id="GitHub">
+<div class="Column_1"> <!-- Left column -->
+<br><br><h1>GitHub</h1><br>
+<p>You can view my coding projects on
+my GitHub profile here:<br><br><br>
+<center><a
+href="https://github.com/clwilson625" target="_blank">The Tech
+Academy GitHub</a></center></p>
+</div>
+<div class="Column_2"> <!-- Right column -->
+<a href="https://github.com/the-tech-academy"
+target="_blank"><img src="img/github-logo.jpg" alt="GitHub">
+</a>
+</div>
+</div>
+</div>
+<!-- Contact section -->
+<div id="Contact">
+    <button onclick="openForm()" class="Pop_Up_Button"> CONTACT </button>
+    <div class="form-popup" id="myForm">
+        <form action="https://formspree.io/info@learncodinganywhere.com" method="POST" 
+        class="form-container">  <!--We are using a free online service from
+        https://formspree.io/ to send our contact form to an email address of our choosing.  
+        This will not run unless live on the internet.  This will have to be pushed to your online website 
+        first-->
+
+            <h1>Contact</h1>
+            <label for="name"><b>Name</b></label>
+            <input type="text" placeholder="Type your name here" name="name"required>
+
+            <label for="phone"><b>Phone</b></label>
+            <input type="text" placeholder="Enter your phone number here" name="phone">
+
+            <label for "email"><b>Email</b></label>
+            <input type="text" placeholder="Type your email address here" name="email" required>
+
+            <label for="message"><b>Message</b></label>
+            <input type="text" placeholder="Type your message here" name="message">
+
+            <button type="submit" class="btn">SUBMIT</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+    </form>
+    </div>
+</div>
+
+
+<!-- Footer section -->
+<footer>
+<p>
+<center>&copy Prosper Consulting Inc., <a
+href="https://learncodinganywhere.com/">The Tech Academy</a></center>
+<br>
+</p>
+</footer>
+<script src="./JS/sample_Portfolio.js"></script>
+</body>
+</html>
